@@ -379,6 +379,14 @@
     text-align: start;
     width: 80%;
 }
+.post-body,
+.news-body {
+    margin: 0 0 20px;
+    padding: 0 10px;
+    line-height: 22px;
+    white-space: initial;
+    word-break: break-all;
+}
 .item-box .buttons {
     position: absolute;
     display: flex;
