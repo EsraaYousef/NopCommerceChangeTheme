@@ -15,12 +15,16 @@
         </div>
     </div>
 </div>
-<div class="full-width">
+<!-- MAIN HEADER-->
+<div class="full-width bg-lightGrey">
     <div class="header">
         @await Component.InvokeAsync("Widget", new { widgetZone = PublicWidgetZones.HeaderMiddle })
         <div class="header-lower">
             <div class="header-logo">
                 @await Component.InvokeAsync("Logo")
+            </div>
+            <div class="header-menu">
+                @await Component.InvokeAsync("TopMenu")
             </div>
             <div class="search-box store-search-box">
                 @await Component.InvokeAsync("SearchBox")
@@ -29,4 +33,11 @@
         @await Component.InvokeAsync("Widget", new { widgetZone = PublicWidgetZones.HeaderAfter })
     </div>
 </div>
+@section NopScripts{
+    <script>
+        $(document).ready(function () {
+            
+        });
+    </script>
 
+}

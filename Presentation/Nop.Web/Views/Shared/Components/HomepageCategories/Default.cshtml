@@ -9,7 +9,10 @@
                     <div class="category-item">
                         <h2 class="title">
                             <a href="@Url.RouteUrl("Category", new { SeName = item.SeName })" title="@item.PictureModel.Title">
-                                @item.Name
+                                <span class="category-item-text-wrapper">
+                                    <span class="category-item-name">@item.Name</span>
+                                    <span class="category-item-count">31 items</span>
+                                </span>
                             </a>
                         </h2>
                         <div class="picture">

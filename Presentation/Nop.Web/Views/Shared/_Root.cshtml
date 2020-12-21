@@ -6,8 +6,9 @@
 @await Html.PartialAsync("_JavaScriptDisabledWarning")
 @await Html.PartialAsync("_OldInternetExplorerWarning")
 <div class="master-wrapper-page">
+    <div class="loader-overlay"><div class="loader"></div></div>
     <div class="full-header">
-        @await Component.InvokeAsync("AdminHeaderLinks")
+        @*@await Component.InvokeAsync("AdminHeaderLinks")*@
         @await Html.PartialAsync("_Header")
         <script asp-location="Footer">
         var localized_data = {
@@ -16,9 +17,7 @@
         AjaxCart.init(false, '.header-links .cart-qty', '.header-links .wishlist-qty', '#flyout-cart', localized_data);
         </script>
         <div class="full-width bg-lightGrey">
-            <div class="header-menu">
-                @await Component.InvokeAsync("TopMenu")
-            </div>
+
         </div>
     </div>
     <div class="full-width-chart">
